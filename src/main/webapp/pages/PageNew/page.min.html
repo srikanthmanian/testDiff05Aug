@@ -1,0 +1,37 @@
+<style id="PageNew.css">
+
+</style>
+<script id="PageNew.js">
+Application.$controller("PageNewPageController", ["$scope", function ($scope) {
+    "use strict";
+
+    /* perform any action with the variables inside this block(on-page-load) */
+    $scope.onPageVariablesReady = function () {
+        /*
+         * variables can be accessed through '$scope.Variables' property here
+         * e.g. $scope.Variables.staticVariable1.getData()
+         */
+    };
+    
+    /* perform any action with widgets inside this block */
+    $scope.onPageReady = function () {
+        /*
+         * widgets can be accessed through '$scope.Widgets' property here
+         * e.g. $scope.Widgets.byId(), $scope.Widgets.byName()or access widgets by $scope.Widgets.widgetName
+         */
+    };
+
+}]);
+
+</script>
+<script id="PageNew.variables.json">
+var _PageNewPage_Variables_ ={};
+</script>
+<script id="PageNew.html" type="text/ng-template">
+<wm-page data-ng-controller="PageNewPageController"> 
+    <wm-content> 
+        <wm-page-content columnwidth="12"> 
+        </wm-page-content> 
+    </wm-content> 
+</wm-page>
+</script>
